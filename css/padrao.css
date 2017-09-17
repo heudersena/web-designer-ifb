@@ -1,0 +1,25 @@
+/* resetar configuração */
+*
+{
+	margin: 0;
+	padding:0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* responsividade padrão */
+
+img,video
+{
+	max-width: 100%;
+}
+
+/* resetar todos os links */
+a
+{
+	text-decoration:none; 
+}
+
+#separador
+{
+	clear: both;
+}
