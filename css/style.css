@@ -1,133 +1,176 @@
+/**
+ * Logo
+ */
+ #ead
+ {
+ 	color: rgb(210,105,30);
+ }
 
-header
-{
-	margin: auto;
-	width: 90%;
-	height: 80px;
-}
+ header
+ {
+ 	margin: auto;
+ 	width: 90%;
+ 	height: 80px;
+ }
 
-header a
-{
-	position: absolute;
-	line-height: 80px;
-}
-header form
-{
-	float: right;
-	line-height: 80px;
-}
+ header a
+ {
+ 	position: absolute;
+ 	line-height: 80px;
+ }
+ header form
+ {
+ 	float: right;
+ 	line-height: 80px;
+ }
 
-/* FORMULARIO DE PESQUISA */
-.search
-{
-	width: 70%;
-	height: 30px;
-	padding: 3px;
-	border-radius: 3px;
-	border: none;
-	background: #F1F1F1;
-	z-index: 3;
-	transition: width 1s ease-out;
-	cursor: pointer;
-}
+/**
+ * FORMULARIO DE PESQUISA
+ */
+ .search
+ {
+ 	width: 68.5%;
+ 	height: 30px;
+ 	padding: 3px;
+ 	border-radius: 3px;
+ 	border: none;
+ 	background: #F1F1F1;
+ 	z-index: 3;
+ 	transition: width 1s ease-out;
+ 	cursor: pointer;
+ }
 
-.btnPesquisar
-{
-	height: 30px;
-	padding: 3px;
-	border-radius: 3px;
-	background-color: #008B8B;
-	color: #fff;
-	border:none;
-}
+ .btnPesquisar
+ {
+ 	height: 30px;
+ 	padding: 3px;
+ 	border-radius: 3px;
+ 	background-color: #008B8B;
+ 	color: #fff;
+ 	border:none;
+ }
+/**
+ *	esconder o formulario de pesquisa ao chegar a uma determinada largura da pagina
+ *
+ */
+ @media screen and (max-width: 960px) {
+ 	#form-search {
+ 		display: none;
+ 	}
+ }
 
-@media screen and (max-width: 960px) {
-	#form-search {
-		display: none;
-	}
-}
+ nav
+ {
+ 	height: 35px;
+ 	font-family: Verdana;
+ 	font-weight: bold;
+ 	font-size: 14px;
+ 	background-color: #008B8B;
+ 	border-bottom:2px solid rgb(210,105,30);
+ }
 
+ nav ul
+ {	
+ 	/* colocar autura automática para responsividade */
+ 	height: auto;
+ 	padding: 8px 0px;
+ 	margin: 0px auto;
+ 	width: 90%;
+ }
 
-nav
-{
-	height: 35px;
-	font-family: Verdana;
-	font-weight: bold;
-	font-size: 14px;
-	background-color: #008B8B;
-	border-bottom:2px solid rgb(210,105,30);
-}
+ nav ul li
+ {
+ 	display: inline;
+ 	padding: 5px;
+ 	margin: 0px;
 
-nav ul
-{	
-	/* colocar autura automática para responsividade */
-	height: auto;
-	padding: 8px 0px;
-	margin: 0px auto;
-	width: 90%;
-}
+ }
 
-nav ul li
-{
-	display: inline;
-	padding: 5px;
-	margin: 0px;
-
-}
-
-nav ul li a
-{
-	text-decoration: none;
-	color: #FFFFFF;
-	padding: 8px;
-
-
-}
-
-/* onde se localiza o conteudo principal */
-main
-{	
-	padding: 0px;
-	margin: 2px auto;
-	width: 90%;
-	min-height: 406px; 
-}
-
-#div_direita
-{
-	width: 20%;
-	float: left;
-}
-
-#div_esquerda
-{
-	width: 79.7%;
-	float: right;
-}
-
-@media screen and (max-width: 960px) {
-	#div_esquerda {
-		width: 100%;
-		border-top: 1px solid #ccc;
-	}
-}
+ nav ul li a
+ {
+ 	text-decoration: none;
+ 	color: #FFFFFF;
+ 	padding: 8px;
 
 
+ }
 
-/* RODAPÉ / FOOTES */
+ /* onde se localiza o conteudo principal */
+ main
+ {	
+ 	padding: 0px;
+ 	margin: 2px auto;
+ 	width: 90%;
+ 	min-height: 490px; 
+ }
 
-footer
-{
-	background-color: #008B8B;
-	width: 100%;
-	margin: auto;
-	height: 120px;
-	position: relative;
-	bottom: 0;
-	border-top:5px solid rgb(210,105,30);
-}
+ #div_direita
+ {
+ 	width: 20%;
+ 	float: left;
+ }
+ #div_direita>table
+ {
+ 	border: 1px solid #ccc;
 
-footer p 
-{
-	line-height: 120px;
-}
+ }
+ #div_direita table tr td
+ {
+ 	border: 1px solid #ccc;
+ }
+
+ #div_direita a
+ {
+ 	font-size: 18px;
+ 	padding: 2px;
+ 	color: #D2691E;
+ }
+ #div_direita a:hover
+ {
+ 	color: #D269aE;
+ }
+
+ #div_esquerda
+ {
+ 	width: 79.7%;
+ 	float: right;
+ }
+
+ .div_1
+ {
+ 	width: 30%;
+ 	float:left
+ }
+ .div_2
+ {	
+ 	width: 80%;
+ }
+
+
+
+ @media screen and (max-width: 960px) {
+ 	#div_esquerda {
+ 		width: 100%;
+ 		border-top: 1px solid #ccc;
+ 	}
+ }
+
+
+
+ /* RODAPÉ / FOOTES */
+
+ footer
+ {
+ 	background-color: #008B8B;
+ 	width: 100%;
+ 	margin: auto;
+ 	height: 120px;
+ 	position: relative;
+ 	bottom: 0;
+ 	border-top:5px solid rgb(210,105,30);
+ }
+
+ footer p 
+ {
+ 	line-height: 120px;
+ }
